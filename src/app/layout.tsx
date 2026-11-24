@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { PortfolioChat } from "@/components/portfolio-chat";
 
 export const metadata: Metadata = {
   title: "Kuldeep Thakur — AI Engineer & Software Developer",
@@ -16,7 +17,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>{children}<PortfolioChat /></body>
     </html>
   );
 }
